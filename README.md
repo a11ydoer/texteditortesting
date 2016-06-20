@@ -1,14 +1,6 @@
-# Comparision of Two Text Editors
-Please upload codes used for text edtiors testing and document comparison criteria. 
+Git repository: <a href="https://github.com/a11yfirst/texteditortesting">Text editor testing</a>
 
-The goal is comparing two editors based on 
-
-- Extensiveness of documentation 
-- Plugin/Add-ons example
-- How easy to implement the same functionality in each editor. – we picked implementing heading structure
-- How to inform users about accessibility checking 
-- More
-
+This document can also be found in <a href="https://github.com/a11yfirst/texteditortesting/blob/master/README.md">A11yFirst github repository.</a>
 <h2>Pre packaged/pre existing features</h2>
 <table>
 <tbody>
@@ -48,7 +40,7 @@ The goal is comparing two editors based on
 <tr>
 <td>Expert Opinion/Recommendation</td>
 <td>Matt King, APG member(Accessibility expert is working on CKEditor project)</td>
-<td></td>
+<td> Default text editor for WordPress. Wordpress is the choice of Univeristy of Illinois library Content Managemtn System(CMS).</td>
 </tr>
 <tr>
 <td>Keyboard accessibility</td>
@@ -95,21 +87,23 @@ The goal is comparing two editors based on
 <td>Developer Community</td>
 <td><a href="http://ckeditor.com/Forums/CKEditor">Forum</a>
 <ul>
+<ul>
  	<li>Registered developers:<strong>116,648</strong></li>
  	<li>Number of downloads:16,419,009</li>
  	<li><a href="http://stackoverflow.com/tags/ckeditor/info">StackOverflow CKEditor forum</a></li>
 </ul>
+</ul>
 </td>
-<td><a href="http://community.tinymce.com/forum/">TinyMCE forum</a>
+<td> <a href="http://community.tinymce.com/forum/">TinyMCE forum</a>
 <ul>
  	<li>Registered users: 23,140</li>
  	<li>Number of downloads: unknown</li>
+ 	<li>Wordpress default editor</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-
 <h2>Functionality/Methods</h2>
 <table>
 <tbody>
@@ -119,44 +113,48 @@ The goal is comparing two editors based on
 <td>TinyMCE</td>
 </tr>
 <tr>
-<td> Filtering Content:
+<td> Filtering Content</td>
+<td> <a href="http://sdk.ckeditor.com/samples/acf.html">Advanced Content Filter</a>
 
-Filters incoming HTML content by transforming and deleting disallowed elements, attributes, classes and styles.The way the editor handles the input and output of content.</td>
-<td> <a href="http://sdk.ckeditor.com/samples/acf.html">Advanced Content Filter</a></td>
-<td> <a href="https://www.tinymce.com/docs/configure/content-filtering/">Content filtering</a></td>
+Filters incoming HTML content by transforming and deleting disallowed elements, attributes, classes and styles.</td>
+<td> <a href="https://www.tinymce.com/docs/configure/content-filtering/">Content filtering</a>
+
+The way the editor handles the input and output of content.</td>
 </tr>
 <tr>
-<td>Add-ons /Plugin Option:
-
-How plugin works</td>
-<td></td>
-<td> Allows to specify which plugins TinyMCE will attempt to load when starting up.
-(hint: use <code>plugins</code> string)
-<a href="https://www.tinymce.com/docs/configure/integration-and-setup/#plugins" target="_blank">Code Example</a>Specify a URL based location of plugins outside of the normal TinyMCE plugins directory.
-(hint: Use <code>external_plugins</code> object)
-<a href="https://www.tinymce.com/docs/configure/integration-and-setup/#external_plugins" target="_blank">Code Example</a></td>
+<td>How plugin works</td>
+<td><a href="http://docs.ckeditor.com/#!/api/CKEDITOR.plugins">CKEditor Plugins </a></td>
+<td>Internal Plugin <a href="https://www.tinymce.com/docs/configure/integration-and-setup/#plugins" target="_blank">Code Example</a> (hint: use <code>plugins</code> string)
+External <a href="https://www.tinymce.com/docs/configure/integration-and-setup/#external_plugins" target="_blank">Code Example</a>(hint: Use <code>external_plugins</code> object)</td>
 </tr>
 <tr>
-<td>Copy and Paste(ex.MS word):
+<td>Copy and Paste from Word
 
 How to configure copy and paste from another program works into chosen text editor</td>
-<td></td>
+<td><a href="http://ckeditor.com/addon/pastefromword">Paste from Word</a> (Free plugin for the editor)</td>
+<td><a href="https://www.tinymce.com/docs/enterprise/paste-from-word/">Paste From Word</a> (included in the TinyMCE Enterprise download)</td>
+</tr>
+<tr>
+<td>Consistency (Content Editable, Editable Content)</td>
+<td><a href="http://docs.ckeditor.com/#!/api/CKEDITOR.dom.range"> CKEDITOR.dom.range</a>
+
+<a href="http://docs.ckeditor.com/#!/api/CKEDITOR.plugins.contextMenu">CKEDITOR.plugins.contextMenu</a></td>
 <td></td>
 </tr>
+<tr>
 <td><span style="color: #993300;">Test Case</span>: Heading Structure</td>
-<td></td>
-<td></td>
+<td> In Progress (Jon Gunderson)</td>
+<td> In Progress(William Weathers)</td>
 </tr>
 <tr>
 <td><span style="color: #993300;">Test Case</span>: Copy and Paste from MS Word</td>
-<td></td>
-<td></td>
+<td> In Progress (Jemma)</td>
+<td> In Progress (Jemma)</td>
 </tr>
 </tbody>
 </table>
 <h2>References</h2>
-<ul>
- 	<li>*http://www.krizalys.com/article/ckeditor-vs-tinymce</li>
- 	<li>**http://socialcompare.com/en/comparison/javascript-online-rich-text-editors(confirmed that all the bugs are closed for CKEditor)</li>
-</ul>
+*http://www.krizalys.com/article/ckeditor-vs-tinymce
+**http://socialcompare.com/en/comparison/javascript-online-rich-text-editors(confirmed that all the bugs are closed for CKEditor)
+
 Git repository: <a href="https://github.com/a11yfirst/texteditortesting">Text editor testing</a>
