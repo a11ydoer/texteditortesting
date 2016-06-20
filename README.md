@@ -1,4 +1,4 @@
-# Text editor testing
+# Comparision of Two Text editors
 Please upload codes used for text edtiors testing and document comparison criteria. 
 
 The goal is comparing two editors based on 
